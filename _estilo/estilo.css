@@ -1,0 +1,424 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400" rel="stylesheet');
+
+*{
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+
+header{
+    position: relative;
+    z-index: 1000000;
+}
+
+p{
+    font-size: 1.15rem;
+}
+.navbar{
+    transition: 0.5s;
+    background: transparent !important;
+
+}
+.navbar.scrolled{
+    background: #0f0f0f !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:#1d1d1d;
+    background:#ffffff;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover{
+    color: #000000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(225,225,225,.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus{
+    color: rgba(225,225,225,1);
+}
+
+
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+    color: rgba(225,225,225,1);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh; 
+    background-image: url("../_imagens/capa1.jpg") !important;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.banner:before,
+.segundaSessao:before,
+.contato:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000000, transparent);
+    pointer-events: none;
+}
+.banner:after,
+.segundaSessao:after,
+.contato:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1100px;
+    background: linear-gradient(360deg,#000000, transparent);
+    pointer-events: none;
+}
+.height100p{
+    height: 600px;
+
+}
+.h100{
+    height: 100%;
+
+}
+.contentBox{
+    /* margin-top: 170px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.contentBox h1{
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: 170px;
+    
+}
+.contentBox p{
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-top: 170px;
+}
+.primeiraSessao{
+    padding: 100px 0;
+    background: #000000;
+    
+}
+
+.headerText h2{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.headerText p {
+    color: #ffffff
+}
+.placeBox{
+    position: relative;
+    max-width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background: #000000;
+    margin-top: 30px;
+
+}
+
+.placeBox .imgBx{
+    width: 100%;
+    height: 100%;
+}
+
+.placeBox .imgBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.placeBox .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end
+}
+
+.placeBox .content h3{
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    background: rgba(0,0,0,.70);
+    color: #ffffffff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.placeBox .content h3 span{
+    font-size: 16px;
+    font-weight: 500
+}
+
+.segundaSessao{
+    background-image: url("../_imagens/capa2.jpg") !important;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+}
+
+.segundaSessao h2{
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 4.5rem
+}
+
+.btnD1{
+    border: 2px solid #ffffff;
+    color: rgb(0, 0, 0);
+    background: #fff;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 1.15rem;
+    outline: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+
+.blog{
+    position: relative;
+    padding: 100px 0;
+    background: #000000
+}
+
+.blogpost{
+    position: relative;
+    padding: 0 0;
+    background: #ffffff
+}
+
+.blogpost .imgBx{
+    height: 300px;
+    
+    
+}
+
+.blogpost .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.blogpost .content{
+    padding: 20px;
+    text-align: justify;
+}
+
+.blogpost .content h1{
+    margin: 0;
+    padding: 0 0 10px;
+    font-weight: 600;
+    font-size: 1.5rem
+
+}
+
+.btnD2,
+.btnD2:hover{
+    background: #262626;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    float: right;
+}
+
+.contato{
+   
+    position: relative;
+    padding: 100px 0;
+    background-size: cover;
+    min-height: 100vh;
+    background-image: url("../_imagens/capa3.jpg") !important;
+}
+
+.contato form{
+    z-index: 1000;
+    position: relative;
+    
+}
+.contato .form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    height: 50px;
+    border-radius: 0;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-size: 1.25rem
+
+}
+
+.contato .form-control:focus,
+.contato .form-control:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: none;
+    
+}
+.contato .textarea{
+    min-height: 100px
+}
+
+.contato label{
+    color: #fff;
+    font-size: 1.25rem
+}
+
+footer{
+    background: #000000;
+    padding: 120px 0 30px;
+
+}
+
+.sci{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.sci li a {
+    color: #777777;
+    font-size: 1.5em;
+    transition: 0.5s
+}
+
+.sci li a:hover{
+    color: #fff;
+}
+
+.cpryt{
+    margin-top: 20px;
+    
+    color: #777777;
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 900px){
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    }
+    .segundaSessao h2 {
+        font-weight: 800;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .banner:after, .segundaSessao:after, .contato:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1370px;
+        background: linear-gradient(360deg,#000000, transparent);
+        pointer-events: none;
+    
+    
+}
+
+
+.segundaSessao h2 {
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.headerText h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+@media (max-width: 992px){
+    .navbar-light .navbar-toggler {
+        background: #fff;
+        border-radius: 3px;
+    }
+    
+
+    .contentBox h1{
+        font-size: 2rem;
+        margin-top: 50px;
+    
+        }
+    .headerText h2{
+        margin-top: 10px;
+    }
+     .contentBox p{
+            margin-top: 50px
+        }
+        .segundaSessao h2 {
+            font-weight: 800;
+            /* color: #ffffff; */
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-top: 110px;
+        }
+        
+.banner{
+    min-height: 100vh;
+    padding: 100px 0;
+}
+.contentBox h1,
+{
+    font-size: 2rem;
+   }
+
+   .contato{
+    position: relative;
+    /* padding: 20px 0; */
+   }
+
+   .contato .form-control{
+        height: 40px;
+        border: 1px solid #fff;
+   }
+
+   
+}
